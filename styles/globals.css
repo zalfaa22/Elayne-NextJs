@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Raleway', sans-serif;
+}
+
+.custom-img {
+  background-image: url('https://img.freepik.com/free-photo/top-view-workspace-with-notebook-notepad_23-2148430825.jpg?w=996&t=st=1677067359~exp=1677067959~hmac=5482e409306fceca2c541c1b07f9a24ab099c7d7562feeeb42b0610db3cff50a')
+}
