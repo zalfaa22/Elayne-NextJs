@@ -5,7 +5,7 @@ import Project from '../components/Project'
 const portfolio = () => {
   return (
     <div>
-        <Hero heading='My portfolio' message='This is some of my project' />
+        <Hero heading='My portfolio 📂' message='This is some of my project' />
         <Project />
     </div>
   )
