@@ -1,5 +1,4 @@
 import data from "../data";
-// import './Card.css';
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 
@@ -7,10 +6,6 @@ function Card() {
   const [keyword, setKeyword] = useState("");
   const [hasilFilter, setHasilfilter] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
-  // const [search, setSearch] = useState('');
-  // const desc = data.description;
-  // console.log(desc);
-  // const describe = desc.substr(0, 20);
 
   const handlefilter = (e) => {
     const filterData = data.filter((e) => {
@@ -81,11 +76,11 @@ function Card() {
                 )
                 .map((item) => (
                   <Link href={`/${item.id}`} key={item.id}>
-                    <div className="template bg-white border justify-center items-center m-5 p-5 rounded-[10px] border-solid border-[#a7a7a7] hover:transition-[0.4s] hover:shadow-[0_10px_40px_0_rgba(0,0,0,0.4)] hover:z-[3] hover:scale-110">
+                    <div className="template bg-white border justify-center items-center m-5 p-5 rounded-[10px] border-solid border-[#cbcbcb] hover:transition-[0.4s] hover:shadow-[0_10px_40px_0_rgba(0,0,0,0.4)] hover:z-[3] hover:scale-110">
                       <img
                         src={item.image}
                         alt=""
-                        className="h-[200px] w-[200px] border mt-[5px] mb-5 mx-1 rounded-[10px] border-solid border-black"
+                        className="h-[200px] w-[200px] border-0 mt-[5px] mb-5 mx-1 rounded-[10px] border-solid border-black"
                       />
                       <h3 class="card-name font-bold mb-3">{item.name}</h3>
                       <p class="card-text ">{item.description}</p>

@@ -22,12 +22,9 @@ function Detail() {
     return <div>Item not found</div>;
   }
 
-  // const { cartCount, addItem } = useShoppingCart();
   const [qty, setQty] = useState(1);
   const [adding, setAdding] = useState(false);
 
-  // const toastId = useRef();
-  // const firstRun = useRef(true);
 
   const handleOnAddToCart = () => {
     setAdding(true);
@@ -38,10 +35,9 @@ function Detail() {
   };
 
   return (
-    <main className="mt-[200px]">
-      <div className="h-screen flex justify-center items-center bg-cream">
+    <main className="mt-[20px]">
+      <div className="h-screen flex justify-center items-center bg-white">
         <div className="px-4 sm:px-0 w-[375px] sm:w-[600px] flex flex-col sm:grid sm:grid-cols-2">
-          {/* TODO: Use Next Image to make images optimize in <picture></picture> HTML element */}
           <div>
             <picture>
               <source
@@ -52,13 +48,13 @@ function Detail() {
               />
               <img
                 className="rounded-tl-xl rounded-tr-xl sm:rounded-bl-xl sm:rounded-r-none"
-                src={barang.image}
+                src={barang.detail}
                 alt={barang.name}
               />
             </picture>
           </div>
 
-          <div className="flex flex-col bg-white p-6 sm:p-7 rounded-bl-xl rounded-br-xl sm:rounded-l-none sm:rounded-tr-xl sm:rounded-br-xl">
+          <div className="flex flex-col bg-[#f4f4f4] p-6 sm:p-7 rounded-bl-xl rounded-br-xl sm:rounded-l-none sm:rounded-tr-xl sm:rounded-br-xl">
             <span className="uppercase tracking-[0.35em] text-xs text-darkGrayishBlue font-montserrat">
               {barang.category}
             </span>
@@ -69,7 +65,7 @@ function Detail() {
               {barang.description}
             </p>
             <div className="mt-6 sm:mt-8 flex items-center space-x-5">
-              <p className="font-fraunces text-3xl text-darkCyan">
+              <p className="font-fraunces text-2xl text-darkCyan">
                 Rp. {barang.price}
               </p>
             </div>
@@ -96,7 +92,7 @@ function Detail() {
 
             <button type="button"
                 onClick={handleOnAddToCart}
-                disabled={adding} className="mt-4 sm:mt-6 flex space-x-2 justify-center items-center py-4 w-full text-xs text-white font-montserrat font-bold bg-black hover:bg-veryDarkBlue transition ease-in-out delay-75 rounded-lg">
+                disabled={adding} className="mt-4 sm:mt-6 flex space-x-2 justify-center items-center py-4 w-full text-xs text-white font-montserrat font-bold bg-black hover:bg-[#6e6e6e] transition ease-in-out delay-75 rounded-lg">
               <Image
                 src="/icon-cart.svg"
                 width={15}

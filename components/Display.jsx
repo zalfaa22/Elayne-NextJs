@@ -1,5 +1,4 @@
-import data from "../display.json";
-// import './Card.css';
+import data from "../display";
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 
@@ -7,10 +6,6 @@ function Card() {
   const [keyword, setKeyword] = useState("");
   const [hasilFilter, setHasilfilter] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
-  // const [search, setSearch] = useState('');
-  // const desc = data.description;
-  // console.log(desc);
-  // const describe = desc.substr(0, 20);
 
   const handlefilter = (e) => {
     const filterData = data.filter((e) => {
@@ -35,14 +30,10 @@ function Card() {
   return (
     <>
       <div className="p-7 text-black z-[2] mt-20">
-        <h1 className="text-3xl font-bold  text-center">Products</h1>
+        <h1 className="text-2xl font-bold text-center">Popular Products</h1>
       </div>
       <div className="templateContainer">
-        
-
-        
-
-        <div className="template_Container items-center justify-center grid relative grid-cols-[repeat(4,1fr)] mx-auto my-0 px-[5%] p-[2%] ">
+        <div className="template_Container items-center justify-center grid relative grid-cols-[repeat(4,1fr)] mx-auto my-0 px-[5%] p-[2%]">
           {hasilFilter.length > 0
             ? hasilFilter
                 .filter((products) =>
@@ -55,17 +46,14 @@ function Card() {
                     href={`/${item.id}`}
                     key={item.id}
                   >
-                    <div className="template bg-white border justify-center items-center m-5 p-5 rounded-[10px] border-solid border-[#a7a7a7] hover:transition-[0.4s] hover:shadow-[0_10px_40px_0_rgba(0,0,0,0.4)] hover:z-[3] hover:scale-110">
+                    <div className="template bg-white border-0 justify-center items-center m-5 p-5 rounded-[5px] border-solid border-[#a7a7a7] hover:transition-[0.4s] hover:shadow-[0_10px_40px_0_rgba(0,0,0,0.4)] hover:z-[3] hover:scale-110">
                       <img
                         src={item.image}
                         alt=""
-                        className="h-[200px] w-[200px] border mt-[5px] mb-5 mx-1 rounded-[10px] border-solid border-black"
+                        className="h-[200px] w-[200px] border mt-[5px] mb-5 mx-1 rounded-[10px] "
                       />
                       <h3 class="card-name font-bold mb-3">{item.name}</h3>
                       <p class="card-text ">{item.description}</p>
-                      <p className="price font-semibold mt-3">
-                        Rp. {item.price}
-                      </p>
                     </div>
                   </Link>
                 ))

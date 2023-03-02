@@ -17,7 +17,7 @@ const Navbar = () => {
         setColor('#ffffff');
         setTextColor('#000000');
       } else {
-        setColor('#fff');
+        setColor('#ffffff');
         setTextColor('#000000');
       }
     };
@@ -42,11 +42,8 @@ const Navbar = () => {
           <li className='p-4'>
             <Link href='/favorite'>Favorite</Link>
           </li>
-          {/* <li className='p-4'>
-            <Link href='/card2'>Card2</Link>
-          </li> */}
           <li className='p-4'>
-            <Link href='/contact'>About Us</Link>
+            <Link href='/about'>About Us</Link>
           </li>
         </ul>
 
@@ -71,13 +68,10 @@ const Navbar = () => {
               <Link href='/'>Home</Link>
             </li>
             <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500'>
-              <Link href='/about'>About</Link>
+              <Link href='/favorite'>Favorite</Link>
             </li>
             <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500'>
-              <Link href='/portfolio'>Portfolio</Link>
-            </li>
-            <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500'>
-              <Link href='/contact'>Contact</Link>
+              <Link href='/about'>About Us</Link>
             </li>
           </ul>
         </div>

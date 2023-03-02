@@ -4,11 +4,11 @@ import React from 'react';
 const Project = () => {
   return (
     <div className='max-w-[1240px] mx-auto py-16 text-center'>
-      <h1 className='font-bold text-2xl p-4'>Project</h1>
+      <h1 className='font-bold text-2xl p-4'></h1>
       <div className='grid grid-rows-none md:grid-cols-5 p-4 gap-4'>
         <div className='w-full h-full col-span-2 md:col-span-3 row-span-2'>
           <Image
-            src='/online store.jpg'
+            src='/products/gelas 6.jpg'
             alt='/'
             layout='responsive'
             width='677'
@@ -17,7 +17,7 @@ const Project = () => {
         </div>
         <div className='w-full h-full'>
           <Image
-            src='/uiux.jpg'
+            src='/details/gelas 8.jpg'
             alt='/'
             width='215'
             height='217'
@@ -27,7 +27,7 @@ const Project = () => {
         </div>
         <div className='w-full h-full'>
           <Image
-            src='/uiux2.jpg'
+            src='/details/piring 6.jpg'
             alt='/'
             width='215'
             height='217'
@@ -37,7 +37,7 @@ const Project = () => {
         </div>
         <div className='w-full h-full'>
           <Image
-            src='/perpus.jpg'
+            src='/details/teko 6.jpg'
             alt='/'
             width='215'
             height='217'
@@ -47,7 +47,7 @@ const Project = () => {
         </div>
         <div className='w-full h-full'>
           <Image
-            src='/uiux3.jpg'
+            src='/details/gelas 1.jpg'
             alt='/'
             width='215'
             height='217'
