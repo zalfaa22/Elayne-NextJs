@@ -1,16 +1,18 @@
 import React from 'react';
 
-const Hero = ({heading, message}) => {
+const Hero = () => {
   return (
-    <div className='flex items-center justify-center h-screen mb-10 bg-fixed bg-center bg-cover custom-img pb-8'>
-      {/* Overlay */}
-      <div className='absolute top-0 left-0 right-0 bottom-0 bg-black/70 z-[2]' />
-      <div className='p-7 text-white z-[2] mt-[-0rem]'>
-        <h2 className='text-5xl font-bold  '>{heading}</h2>
-        <p className='py-6 text-xl '>{message}</p>
-        <a href="/favorite" className='px-8 py-2 border rounded-[20px] bg-white text-black font-semibold '>Shop</a>
-      </div>
-    </div>
+    <section className="bg-[#ffd1ac] dark:text-gray-100">
+	<div className="container mx-auto flex flex-col items-center px-4 py-16 text-center md:py-32 md:px-10 lg:px-32 xl:max-w-3xl">
+		<h1 className="text-4xl font-bold leading-none sm:text-5xl">Hello, welcome to 
+			<span className="dark:text-violet-400">ELAYNE</span>
+		</h1>
+		<p className="px-8 mt-8 mb-12 text-lg">Happy Shopping!!!</p>
+		<div className="flex flex-wrap justify-center">
+			<a href="/favorite" className="px-8 py-3 m-2 text-lg font-semibold rounded dark:bg-violet-400 dark:text-gray-900">Shop</a>
+		</div>
+	</div>
+</section>
   );
 };
 

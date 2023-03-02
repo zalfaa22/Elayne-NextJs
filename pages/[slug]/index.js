@@ -90,7 +90,9 @@ function Detail() {
               </div>
             </div>
 
-            <button type="button" className="mt-4 sm:mt-6 flex space-x-2 justify-center items-center py-4 w-full text-xs text-white font-montserrat font-bold bg-black hover:bg-[#6e6e6e] transition ease-in-out delay-75 rounded-lg">
+            <button type="button"
+                onClick={handleOnAddToCart}
+                disabled={adding} className="mt-4 sm:mt-6 flex space-x-2 justify-center items-center py-4 w-full text-xs text-white font-montserrat font-bold bg-black hover:bg-[#6e6e6e] transition ease-in-out delay-75 rounded-lg">
               <Image
                 src="/icon-cart.svg"
                 width={15}
