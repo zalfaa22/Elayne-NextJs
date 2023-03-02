@@ -17,8 +17,8 @@ const Navbar = () => {
         setColor('#ffffff');
         setTextColor('#000000');
       } else {
-        setColor('transparent');
-        setTextColor('#ffffff');
+        setColor('#fff');
+        setTextColor('#000000');
       }
     };
     window.addEventListener('scroll', changeColor);
@@ -32,7 +32,7 @@ const Navbar = () => {
       <div className='max-w-[1220px] m-auto flex justify-between items-center p-3 text-white'>
         <Link href='/'>
           <h1 style={{ color: `${textColor}` }} className='font-bold text-3xl'>
-            Zalfaaa🧸
+            ELAYNE
           </h1>
         </Link>
         <ul style={{ color: `${textColor}` }} className='hidden sm:flex'>
@@ -40,13 +40,13 @@ const Navbar = () => {
             <Link href='/'>Home</Link>
           </li>
           <li className='p-4'>
-            <Link href='/about'>About</Link>
+            <Link href='/favorite'>Favorite</Link>
           </li>
+          {/* <li className='p-4'>
+            <Link href='/card2'>Card2</Link>
+          </li> */}
           <li className='p-4'>
-            <Link href='/portfolio'>Portfolio</Link>
-          </li>
-          <li className='p-4'>
-            <Link href='/contact'>Contact</Link>
+            <Link href='/contact'>About Us</Link>
           </li>
         </ul>
 

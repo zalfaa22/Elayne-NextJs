@@ -8,6 +8,7 @@ const Hero = ({heading, message}) => {
       <div className='p-7 text-white z-[2] mt-[-0rem]'>
         <h2 className='text-5xl font-bold  text-center'>{heading}</h2>
         <p className='py-5 text-xl text-center'>{message}</p>
+        <a href="/favorite"  className='px-8 py-2 border ml-72'>Shop</a>
       </div>
     </div>
   );
