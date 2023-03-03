@@ -29,7 +29,7 @@ function Card() {
 
   return (
     <>
-      <div className="p-7 text-black z-[2] mt-20">
+      <div className="p-7 text-black z-[2] mt-24">
         <h1 className="text-2xl font-bold text-center">Popular Products</h1>
       </div>
       <div className="templateContainer">
