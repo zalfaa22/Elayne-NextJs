@@ -29,6 +29,6 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 ## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Zalfa's Personal Website](https://personal-website-next-js-six.vercel.app/) from the creators of Next.js.
+The easiest way to deploy your Next.js app is to use the [Zalfa's Personal Website](https://elayne-nextjs.vercel.app/) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
