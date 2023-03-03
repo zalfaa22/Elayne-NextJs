@@ -1,10 +1,11 @@
 import React from 'react'
-import Detail from '../components/Detail';
+// import Detail from '../components/Detail';
 
 const Cart = () => {
   return (
     <div>
-        <Detail/>
+      <h1>Debug mode</h1>
+        {/* <Detail/> */}
     </div>
   )
 }
