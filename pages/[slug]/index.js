@@ -18,13 +18,14 @@ function Detail() {
   const { slug } = router.query;
   const barang = getItems(slug);
   console.log(data);
+  
+  const [qty, setQty] = useState(1);
+  const [adding, setAdding] = useState(false);
+  
+  
   if (Object.keys(barang).length === 1) {
     return <div>Item not found</div>;
   }
-
-  const [qty, setQty] = useState(1);
-  const [adding, setAdding] = useState(false);
-
 
   const handleOnAddToCart = () => {
     setAdding(true);

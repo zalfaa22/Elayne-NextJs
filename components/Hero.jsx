@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 const Hero = () => {
@@ -9,7 +10,7 @@ const Hero = () => {
 		</h1>
 		<p className="px-8 mt-8 mb-12 text-lg">Happy Shopping!!!</p>
 		<div className="flex flex-wrap justify-center">
-			<a href="/favorite" className="px-8 py-3 m-2 text-lg font-semibold rounded dark:bg-violet-400 dark:text-gray-900">Shop</a>
+			<Link href="/favorite" className="px-8 py-3 m-2 text-lg font-semibold rounded dark:bg-violet-400 dark:text-gray-900">Shop</Link>
 		</div>
 	</div>
 </section>

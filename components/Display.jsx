@@ -52,8 +52,8 @@ function Card() {
                         alt=""
                         className="h-[200px] w-[200px] border mt-[5px] mb-5 mx-1 rounded-[10px] "
                       />
-                      <h3 class="card-name font-bold mb-3">{item.name}</h3>
-                      <p class="card-text ">{item.description}</p>
+                      <h3 className="card-name font-bold mb-3">{item.name}</h3>
+                      <p className="card-text ">{item.description}</p>
                     </div>
                   </Link>
                 ))
@@ -71,8 +71,8 @@ function Card() {
                   return (
                     <div className="template" key={val.id}>
                       <img src={val.image} alt="" />
-                      <h3 class="card-name">{val.name}</h3>
-                      <p class="card-text">{val.description}</p>
+                      <h3 className="card-name">{val.name}</h3>
+                      <p className="card-text">{val.description}</p>
                       <p className="price">Rp {val.price}</p>
                     </div>
                   );
