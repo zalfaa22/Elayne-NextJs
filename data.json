@@ -1,4 +1,4 @@
-const data = [
+[
     {
       "id": 1,
       "name": "Nam Mug",
@@ -220,5 +220,3 @@ const data = [
       "expiryDate": "2022-06-05"
     }
   ]
-
-  export default data;

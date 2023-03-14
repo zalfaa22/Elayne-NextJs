@@ -1,4 +1,4 @@
-import data from "../data";
+// import data from "../data";
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 
@@ -6,6 +6,7 @@ function Card() {
   const [keyword, setKeyword] = useState("");
   const [hasilFilter, setHasilfilter] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
+  const [data, setData] = useState([]);
 
   const handlefilter = (e) => {
     const filterData = data.filter((e) => {
@@ -27,6 +28,20 @@ function Card() {
     }
   }
 
+  useEffect(() => {
+    try {
+      const fetchData = async () => {
+        const response = await fetch(
+          "https://api.jsonbin.io/v3/b/640fae82ebd26539d08e293e"
+        );
+        const data = await response.json();
+        setData(data.record);
+      };
+      fetchData();
+    } catch (err) {
+      console.log(err);
+    }
+  }, []);
 
   return (
     <>
